@@ -56,6 +56,11 @@ a {
 
 /* Reset CSS end */
 
+.logo-main {
+  width: 100px;
+  height: auto;
+}
+
 body {
   padding-top: 80px; /* Adjust this value based on your navbar height */
 }
