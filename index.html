@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Indokelapa Nusantara</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="uk-navbar-container">
+      <div class="uk-container">
+        <div uk-navbar>
+          <div class="uk-flex-middle uk-navbar-left">
+            <a href="#"><h3 class="logo">Logo</h3></a>
+          </div>
+          <!-- Right navbar start -->
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav custom-nav">
+              <li class="uk-active uk-visible@s">
+                <a href="#" id="ganti-font">Active</a>
+              </li>
+              <li class="uk-visible@s">
+                <a href="#"
+                  >Parent <span uk-icon="icon: chevron-down"></span
+                ></a>
+                <div uk-dropdown="offset:0">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li class="uk-active"><a href="#">Home</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="uk-visible@s"><a href="#">Item</a></li>
+              <!-- Hamburger menu start (mobile) -->
+              <li class="uk-hidden@s">
+                <a href="#offcanvas-usage" uk-toggle uk-icon="icon: menu"></a>
+              </li>
+              <!-- Hamburger menu end (mobile) -->
+            </ul>
+          </div>
+          <!-- Right navbar end -->
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Image Hero start -->
+    <div
+      uk-slideshow="animation: push; min-height: 300; max-height: 600; autoplay: true; autoplay-interval: 3000"
+    >
+      <div
+        class="uk-position-relative uk-visible-toggle uk-light"
+        tabindex="-1"
+      >
+        <ul class="uk-slideshow-items">
+          <li>
+            <img src="img/kelapa-1.jpg" alt="" uk-cover />
+            <!-- <div class="uk-position-center uk-overlay">
+              <h3 class="uk-heading-small">Text on Picture 1</h3>
+            </div> -->
+          </li>
+          <li>
+            <img src="img/kelapa-2.png" alt="" uk-cover />
+            <!-- <div class="uk-position-center uk-overlay">
+              <h3 class="uk-heading-small">Text on Picture 2</h3>
+            </div> -->
+          </li>
+        </ul>
+
+        <!-- Slider Button -->
+        <a
+          class="uk-position-center-left uk-position-small uk-visible@s"
+          href="#"
+          uk-slidenav-previous
+          uk-slideshow-item="previous"
+        ></a>
+        <a
+          class="uk-position-center-right uk-position-small uk-visible@s"
+          href="#"
+          uk-slidenav-next
+          uk-slideshow-item="next"
+        ></a>
+      </div>
+      <!-- Dotnav (Mobile) -->
+      <ul
+        class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin uk-hidden@s"
+      ></ul>
+    </div>
+    <!-- Image Hero End -->
+
+    <!-- Tentang Kami -->
+    <section class="uk-container center-content">
+      <div>
+        <h1 class="title">TENTANG KAMI</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus,
+          molestias? Ex error, beatae tempore temporibus vitae ab, laboriosam
+          distinctio eius ut dolore aliquid ullam excepturi veritatis sequi
+          dolores vero voluptatum voluptas consequatur tempora ipsum rerum
+          reprehenderit quae animi. Sequi, ab?
+        </p>
+      </div>
+
+      <!-- Divider -->
+      <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match" uk-grid>
+        <div>
+          <div class="uk-card uk-card-hover uk-card-body">
+            <img
+              class="uk-border-circle"
+              src="img/round-1.png"
+              alt=""
+              width="150px"
+              height="150px"
+            />
+            <h3 class="uk-card-title">Default</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-hover uk-card-body">
+            <img
+              class="uk-border-circle"
+              src="img/round-2.png"
+              alt=""
+              width="150px"
+              height="150px"
+            />
+            <h3 class="uk-card-title">Primary</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div>
+          <a href="#modal-example" uk-toggle>
+            <div class="uk-card uk-card-hover uk-card-body">
+              <img
+                class="uk-border-circle"
+                src="img/round-3.png"
+                alt=""
+                width="150px"
+                height="150px"
+              />
+              <h3 class="uk-card-title">Modal</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section-2">
+      <div class="uk-container uk-text-center">
+        <div class="uk-margin-medium-bottom">
+          <h1 class="title">PRODUK KAMI</h1>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
+          <a href="">
+            <div>
+              <div class="uk-card uk-card-hover uk-card-default">
+                <div class="uk-card-media-top">
+                  <img
+                    src="img/picture-1.jpeg"
+                    width="1800"
+                    height="1200"
+                    alt=""
+                  />
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Media Top</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <div class="uk-card uk-card-hover uk-card-default">
+                <div class="uk-card-media-top">
+                  <img
+                    src="img/picture-1.jpeg"
+                    width="1800"
+                    height="1200"
+                    alt=""
+                  />
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Media Top</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <div class="uk-card uk-card-hover uk-card-default">
+                <div class="uk-card-media-top">
+                  <img
+                    src="img/picture-1.jpeg"
+                    width="1800"
+                    height="1200"
+                    alt=""
+                  />
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Media Top</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <div class="uk-card uk-card-hover uk-card-default">
+                <div class="uk-card-media-top">
+                  <img
+                    src="img/picture-1.jpeg"
+                    width="1800"
+                    height="1200"
+                    alt=""
+                  />
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Media Top</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <div class="uk-card uk-card-hover uk-card-default">
+                <div class="uk-card-media-top">
+                  <img
+                    src="img/picture-1.jpeg"
+                    width="1800"
+                    height="1200"
+                    alt=""
+                  />
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Media Top</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="">
+            <div>
+              <div class="uk-card uk-card-hover uk-card-default">
+                <div class="uk-card-media-top">
+                  <img
+                    src="img/picture-1.jpeg"
+                    width="1800"
+                    height="1200"
+                    alt=""
+                  />
+                </div>
+                <div class="uk-card-body">
+                  <h3 class="uk-card-title">Media Top</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Kami -->
+    <section class="section-3">
+      <div class>
+        <h1 class="title uk-text-center uk-margin-medium-bottom">
+          KONTAK KAMI
+        </h1>
+      </div>
+
+      <!-- Divider -->
+      <div class="uk-container">
+        <div class="custom-flex-container">
+          <div class="container-alamat">
+            <h3 class="uk-margin-small-bottom">Alamat</h3>
+            <p>Jl. Murdai No.35B RT06/RW13,</p>
+            <p>Cempaka Putih Barat,</p>
+            <p>Jakarta Pusat, 10520</p>
+          </div>
+          <div class="container-find-us">
+            <h3 class="uk-margin-small-bottom">Find us on</h3>
+            <div class="svg-container">
+              <div>
+                <span class="icon-wa" uk-icon="icon: instagram"></span>
+              </div>
+              <div>indokelapanusantara</div>
+            </div>
+            <div class="svg-container">
+              <div>
+                <span class="icon-wa" uk-icon="icon: whatsapp"></span>
+              </div>
+              <div>wa.me/number</div>
+            </div>
+            <div class="svg-container">
+              <div class="svg-tokped">
+                <img src="img/tokopedia-svgrepo-com.svg" alt="" uk-svg />
+              </div>
+              <div>tokopedia.com/toko</div>
+            </div>
+          </div>
+          <div class="uk-margin-medium-bottom">
+            <h3 class="uk-margin-small-bottom">Map</h3>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=jl murdai&t=&z=10&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0"
+                  scrolling="no"
+                  marginheight="0"
+                  marginwidth="0"
+                ></iframe
+                ><a href="https://2yu.co"></a><br /><style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 100%;
+                    width: 100%;
+                  }</style
+                ><a href="https://embedgooglemap.2yu.co/"></a
+                ><style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 100%;
+                    width: 100%;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="uk-container uk-text-center uk-padding-small">
+        <h1>Copyright © 2023. All Rights Reserved.</h1>
+      </div>
+    </footer>
+
+    <!-- Outside layout start -->
+    <!-- Modal -->
+    <div id="modal-example" uk-modal>
+      <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+        <h2 class="uk-modal-title uk-margin-medium-bottom">Headline</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborums.
+        </p>
+      </div>
+    </div>
+    <!-- Modal end -->
+
+    <!-- Off canvas start -->
+    <div id="offcanvas-usage" uk-offcanvas="flip: true">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+          <li class="uk-active"><a href="#">Active</a></li>
+          <li class="uk-parent">
+            <a href="#">Parent</a>
+            <ul class="uk-nav-sub">
+              <li><a href="#">Sub item</a></li>
+              <li><a href="#">Sub item</a></li>
+              <li><a href="#">Sub item</a></li>
+              <li><a href="#">Sub item</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Item</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Off canvas end -->
+    <!-- Outside layout end -->
+  </body>
+</html>

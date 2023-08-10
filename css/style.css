@@ -1,0 +1,172 @@
+/* Apply a basic CSS reset */
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("/fonts/Quicksand-VariableFont_wght.ttf");
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  font-family: "Quicksand";
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* Reset list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset anchor styles */
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+/* Apply box-sizing to all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset CSS end */
+
+body {
+  padding-top: 80px; /* Adjust this value based on your navbar height */
+}
+
+.custom-nav > li > a {
+  font-family: "Quicksand";
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+a:hover {
+  color: gray;
+}
+.uk-navbar-container {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4rem;
+  text-align: center;
+}
+
+.center-content > div {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+/* Section 2 */
+.section-2,
+.section-3 {
+  background-color: rgb(247, 247, 247);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-3 {
+  background-color: white;
+}
+.custom-svg {
+  width: 22px; /* Set your desired width here */
+  height: auto; /* Maintain aspect ratio */
+}
+/* Footer */
+footer {
+  background-color: black;
+}
+
+footer h1 {
+  color: white;
+  font-family: "Quicksand";
+}
+
+.contact {
+  background-color: aquamarine;
+}
+
+.custom-flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.svg-container {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.icon-wa {
+  margin-right: 10px;
+}
+
+.svg-tokped {
+  height: auto;
+  width: 22px;
+  margin-right: 10px; /* Adjust this margin as needed */
+}
+/* Media Query */
+
+@media (max-width: 768px) {
+  .center-content {
+    padding: 2rem 2rem;
+  }
+}
+@media (max-width: 640px) {
+  .center-content {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-alamat,
+  .container-find-us {
+    margin-bottom: 1.5rem;
+  }
+}
