@@ -102,7 +102,7 @@ a:hover {
 /* Section 2 */
 .section-2,
 .section-3 {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(238, 237, 237);
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -173,5 +173,11 @@ footer h1 {
   .container-alamat,
   .container-find-us {
     margin-bottom: 1.5rem;
+  }
+}
+
+@media (width: 768px) {
+  .container-find-us {
+    margin-right: 1.5rem;
   }
 }
