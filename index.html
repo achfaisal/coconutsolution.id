@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="/js/uikit.min.js"></script>
     <script src="/js/uikit-icons.min.js"></script>
+    <script src="/js/script.js"></script>
   </head>
   <body>
     <!-- Navbar start -->
@@ -23,15 +24,17 @@
           <div class="uk-navbar-right">
             <ul class="uk-navbar-nav custom-nav">
               <li class="uk-active uk-visible@s">
-                <a href="#" id="ganti-font">Home</a>
+                <a href="index.html" id="ganti-font">Home</a>
               </li>
               <li class="uk-visible@s">
-                <a href="#"
-                  >Product <span uk-icon="icon: chevron-down"></span
+                <a href="#tentang-kami" data-uk-scroll="offset: 80">ABOUT US</a>
+              </li>
+              <li class="uk-visible@s">
+                <a href="#produk-kami" data-uk-scroll="offset: 80"
+                  >PRODUCT<span uk-icon="icon: chevron-down"></span
                 ></a>
                 <div uk-dropdown="offset:7">
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li class="uk-active"><a href="#">Home</a></li>
                     <li><a href="#">Item</a></li>
                     <li><a href="#">Item</a></li>
                     <li><a href="#">Item</a></li>
@@ -39,7 +42,11 @@
                   </ul>
                 </div>
               </li>
-              <li class="uk-visible@s"><a href="#">Others</a></li>
+              <li class="uk-visible@s">
+                <a href="#kontak-kami" data-uk-scroll="offset: 80"
+                  >CONTACT US</a
+                >
+              </li>
               <!-- Hamburger menu start (mobile) -->
               <li class="uk-hidden@s">
                 <a href="#offcanvas-usage" uk-toggle uk-icon="icon: menu"></a>
@@ -98,7 +105,7 @@
     <!-- Image Hero End -->
 
     <!-- Tentang Kami -->
-    <section class="uk-container center-content">
+    <section id="tentang-kami" class="uk-container center-content">
       <div>
         <h1 class="title">TENTANG KAMI</h1>
         <p>
@@ -113,7 +120,7 @@
       <!-- Divider -->
       <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match" uk-grid>
         <div>
-          <div class="uk-card uk-card-hover uk-card-body">
+          <div class="uk-card uk-card-hover uk-card-body custom-card">
             <img
               class="uk-border-circle"
               src="img/round-1.png"
@@ -121,12 +128,12 @@
               width="150px"
               height="150px"
             />
-            <h3 class="uk-card-title">Default</h3>
+            <h3 class="uk-card-title title-margin">Default</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
         <div>
-          <div class="uk-card uk-card-hover uk-card-body">
+          <div class="uk-card uk-card-hover uk-card-body custom-card">
             <img
               class="uk-border-circle"
               src="img/round-2.png"
@@ -134,13 +141,13 @@
               width="150px"
               height="150px"
             />
-            <h3 class="uk-card-title">Primary</h3>
+            <h3 class="uk-card-title title-margin">Primary</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
         </div>
         <div>
           <a href="#modal-example" uk-toggle>
-            <div class="uk-card uk-card-hover uk-card-body">
+            <div class="uk-card uk-card-hover uk-card-body custom-card">
               <img
                 class="uk-border-circle"
                 src="img/round-3.png"
@@ -148,7 +155,7 @@
                 width="150px"
                 height="150px"
               />
-              <h3 class="uk-card-title">Modal</h3>
+              <h3 class="uk-card-title title-margin">Modal</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div></a
           >
@@ -157,7 +164,7 @@
     </section>
 
     <!-- Section 2 -->
-    <section class="section-2">
+    <section id="produk-kami" class="section-2">
       <div class="uk-container uk-text-center">
         <div class="uk-margin-medium-bottom">
           <h1 class="title">PRODUK KAMI</h1>
@@ -166,7 +173,7 @@
         <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
           <a href="">
             <div>
-              <div class="uk-card uk-card-hover uk-card-default">
+              <div class="uk-card uk-card-hover uk-card-default custom-card">
                 <div class="uk-card-media-top">
                   <img
                     src="img/sekam-bakar.png"
@@ -176,7 +183,7 @@
                   />
                 </div>
                 <div class="uk-card-body">
-                  <h3 class="uk-card-title">Media Top</h3>
+                  <h3 class="uk-card-title title-margin">Produk 1</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt.
@@ -187,12 +194,12 @@
           </a>
           <a href="">
             <div>
-              <div class="uk-card uk-card-hover uk-card-default">
+              <div class="uk-card uk-card-hover uk-card-default custom-card">
                 <div class="uk-card-media-top">
                   <img src="img/cocopeat.png" width="600" height="400" alt="" />
                 </div>
                 <div class="uk-card-body">
-                  <h3 class="uk-card-title">Media Top</h3>
+                  <h3 class="uk-card-title title-margin">Produk 2</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt.
@@ -203,7 +210,7 @@
           </a>
           <a href="">
             <div>
-              <div class="uk-card uk-card-hover uk-card-default">
+              <div class="uk-card uk-card-hover uk-card-default custom-card">
                 <div class="uk-card-media-top">
                   <img
                     src="img/sekam-bakar.png"
@@ -213,7 +220,7 @@
                   />
                 </div>
                 <div class="uk-card-body">
-                  <h3 class="uk-card-title">Media Top</h3>
+                  <h3 class="uk-card-title title-margin">Produk 3</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt.
@@ -224,7 +231,7 @@
           </a>
           <a href="">
             <div>
-              <div class="uk-card uk-card-hover uk-card-default">
+              <div class="uk-card uk-card-hover uk-card-default custom-card">
                 <div class="uk-card-media-top">
                   <img
                     src="img/sekam-bakar.png"
@@ -234,7 +241,7 @@
                   />
                 </div>
                 <div class="uk-card-body">
-                  <h3 class="uk-card-title">Media Top</h3>
+                  <h3 class="uk-card-title title-margin">Produk 4</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt.
@@ -245,7 +252,7 @@
           </a>
           <a href="">
             <div>
-              <div class="uk-card uk-card-hover uk-card-default">
+              <div class="uk-card uk-card-hover uk-card-default custom-card">
                 <div class="uk-card-media-top">
                   <img
                     src="img/sekam-bakar.png"
@@ -255,7 +262,7 @@
                   />
                 </div>
                 <div class="uk-card-body">
-                  <h3 class="uk-card-title">Media Top</h3>
+                  <h3 class="uk-card-title title-margin">Produk 5</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt.
@@ -266,12 +273,12 @@
           </a>
           <a href="">
             <div>
-              <div class="uk-card uk-card-hover uk-card-default">
+              <div class="uk-card uk-card-hover uk-card-default custom-card">
                 <div class="uk-card-media-top">
                   <img src="img/cocopeat.png" width="600" height="400" alt="" />
                 </div>
                 <div class="uk-card-body">
-                  <h3 class="uk-card-title">Media Top</h3>
+                  <h3 class="uk-card-title title-margin">Produk 6</h3>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt.
@@ -285,7 +292,7 @@
     </section>
 
     <!-- Kontak Kami -->
-    <section class="section-3">
+    <section id="kontak-kami" class="section-3">
       <div class>
         <h1 class="title uk-text-center uk-margin-medium-bottom">
           KONTAK KAMI
@@ -359,16 +366,20 @@
       </div>
     </section>
 
+    <!-- Footer start -->
     <footer>
       <div class="uk-container uk-text-center uk-padding-small">
         <h1>Copyright © 2023. All Rights Reserved.</h1>
       </div>
     </footer>
+    <!-- Footer end -->
 
     <!-- Outside layout start -->
     <!-- Modal -->
     <div id="modal-example" uk-modal>
-      <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+      <div
+        class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical custom-card"
+      >
         <button class="uk-modal-close-default" type="button" uk-close></button>
         <h2 class="uk-modal-title uk-margin-medium-bottom">Headline</h2>
         <p>
@@ -390,8 +401,11 @@
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <ul class="uk-nav uk-nav-default">
           <li class="uk-active"><a href="#">Active</a></li>
+          <li>
+            <a href="#tentang-kami" data-uk-scroll="offset: 110">About Us</a>
+          </li>
           <li class="uk-parent">
-            <a href="#">Parent</a>
+            <a href="#produk-kami" data-uk-scroll="offset: 80">Product</a>
             <ul class="uk-nav-sub">
               <li><a href="#">Sub item</a></li>
               <li><a href="#">Sub item</a></li>
@@ -399,7 +413,9 @@
               <li><a href="#">Sub item</a></li>
             </ul>
           </li>
-          <li><a href="#">Item</a></li>
+          <li>
+            <a href="#kontak-kami" uk-scroll>Contact Us</a>
+          </li>
         </ul>
       </div>
     </div>
