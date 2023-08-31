@@ -119,6 +119,23 @@ a:hover {
   overflow: hidden;
 }
 
+.uk-card.modified {
+  transition: background-color 0.3s;
+  background-color: initial;
+}
+
+.uk-card.modified:hover {
+  background-color: rgb(46, 46, 46);
+}
+
+.uk-card.modified:hover .uk-card-title {
+  color: white;
+}
+
+.uk-card.modified:hover .product-text {
+  color: white;
+}
+
 .section-3 {
   background-color: white;
 }
@@ -167,12 +184,8 @@ footer h1 {
   min-height: 82.5vh;
 }
 
-/* Maps */
-.gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 100%;
-  width: 100%;
+.product-slide {
+  scale: 100%;
 }
 
 /* Media Query */
@@ -209,33 +222,19 @@ footer h1 {
   }
 }
 
-/* TEST */
-/* .uk-hover {
-  transition: background-color 0.3s; 
-  background-color: initial; 
+.product-container {
+  display: flex;
+  gap: 60px;
 }
 
-.uk-hover:hover {
-  background-color: lightblue; 
+.picture-center {
+  text-align: center;
 }
 
-.uk-card-media-top:hover {
-  background-color: lightblue; 
-} */
-
-.uk-card.modified {
-  transition: background-color 0.3s;
-  background-color: initial;
-}
-
-.uk-card.modified:hover {
-  background-color: grey;
-}
-
-.uk-card.modified:hover .uk-card-title {
-  color: white;
-}
-
-.uk-card.modified:hover .product-text {
-  color: white;
+@media (max-width: 768px) {
+  .product-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
 }
