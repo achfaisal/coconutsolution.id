@@ -223,11 +223,19 @@ footer h1 {
   background-color: lightblue; 
 } */
 
-.custom-card {
-  transition: background-color 0.3s ease;
+.uk-card.modified {
+  transition: background-color 0.3s;
+  background-color: initial;
 }
 
-.custom-card:hover,
-.custom-card.hovered {
-  background-color: black; /* Change this to the desired background color */
+.uk-card.modified:hover {
+  background-color: grey;
+}
+
+.uk-card.modified:hover .uk-card-title {
+  color: white;
+}
+
+.uk-card.modified:hover .product-text {
+  color: white;
 }
