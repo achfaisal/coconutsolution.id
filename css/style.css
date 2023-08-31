@@ -1,5 +1,3 @@
-/* Apply a basic CSS reset */
-
 @font-face {
   font-family: "Quicksand";
   src: url("/fonts/Quicksand-VariableFont_wght.ttf");
@@ -54,6 +52,10 @@ a {
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 80px; /* height of sticky header */
+}
+
 /* Reset CSS end */
 
 .logo-main {
@@ -99,12 +101,22 @@ a:hover {
   margin-bottom: 1rem;
   font-weight: bold;
 }
+
 /* Section 2 */
 .section-2,
 .section-3 {
   background-color: rgb(238, 237, 237);
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+.title-margin {
+  margin-bottom: 1rem;
+}
+
+.custom-card {
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .section-3 {
@@ -148,6 +160,21 @@ footer h1 {
   width: 22px;
   margin-right: 10px; /* Adjust this margin as needed */
 }
+
+/* Product Page */
+.product {
+  margin-top: 40px; /* You can adjust this margin as needed */
+  min-height: 82.5vh;
+}
+
+/* Maps */
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 100%;
+  width: 100%;
+}
+
 /* Media Query */
 
 @media (max-width: 768px) {
@@ -180,4 +207,27 @@ footer h1 {
   .container-find-us {
     margin-right: 1.5rem;
   }
+}
+
+/* TEST */
+/* .uk-hover {
+  transition: background-color 0.3s; 
+  background-color: initial; 
+}
+
+.uk-hover:hover {
+  background-color: lightblue; 
+}
+
+.uk-card-media-top:hover {
+  background-color: lightblue; 
+} */
+
+.custom-card {
+  transition: background-color 0.3s ease;
+}
+
+.custom-card:hover,
+.custom-card.hovered {
+  background-color: black; /* Change this to the desired background color */
 }

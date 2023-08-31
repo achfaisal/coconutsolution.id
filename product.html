@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Indokelapa Nusantara</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/uikit.min.js"></script>
+    <script src="/js/uikit-icons.min.js"></script>
+    <script src="/js/script.js"></script>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="uk-navbar-container">
+      <div class="uk-container">
+        <div uk-navbar>
+          <div class="uk-flex-middle uk-navbar-left">
+            <a href="#"
+              ><img class="logo-main" src="img/logo-big.png" alt=""
+            /></a>
+          </div>
+          <!-- Right navbar start -->
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav custom-nav">
+              <li class="uk-active uk-visible@s">
+                <a href="index.html" id="ganti-font">Home</a>
+              </li>
+              <li class="uk-visible@s">
+                <a href="#tentang-kami" data-uk-scroll="offset: 80">ABOUT US</a>
+              </li>
+              <li class="uk-visible@s">
+                <a href="#produk-kami" data-uk-scroll="offset: 80"
+                  >PRODUCT<span uk-icon="icon: chevron-down"></span
+                ></a>
+                <div uk-dropdown="offset:7">
+                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                    <li><a href="#">Item</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="uk-visible@s">
+                <a href="#kontak-kami" data-uk-scroll="offset: 80"
+                  >CONTACT US</a
+                >
+              </li>
+              <!-- Hamburger menu start (mobile) -->
+              <li class="uk-hidden@s">
+                <a href="#offcanvas-usage" uk-toggle uk-icon="icon: menu"></a>
+              </li>
+              <!-- Hamburger menu end (mobile) -->
+            </ul>
+          </div>
+          <!-- Right navbar end -->
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Tentang Kami -->
+    <main class="uk-container product">
+      <h1 class="title">TENTANG KAMI</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi nulla
+        iusto numquam! Eos impedit temporibus incidunt quia eius laudantium
+        similique enim ad ipsa sapiente excepturi dicta iusto facilis quasi
+        perferendis assumenda, eligendi unde necessitatibus odit deleniti quo!
+        Molestias sit veniam incidunt optio sunt totam illum atque temporibus
+        dolorem eligendi. Adipisci eaque excepturi quidem unde ipsum temporibus
+        aspernatur error iusto corporis consectetur? Sunt reprehenderit
+        doloremque veritatis. Ut vero nobis laboriosam illo magni veniam
+        recusandae eligendi obcaecati harum. Odio totam ex, quae enim sunt quam
+        sit corrupti quod nam commodi beatae atque unde laboriosam vitae.
+        Voluptas quo aut praesentium, non fugiat ipsam.
+      </p>
+
+      <div class="uk-child-width-1-2@m" uk-grid>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-media-top">
+              <img
+                src="img/sekam-bakar.png"
+                width="1800"
+                height="1200"
+                alt=""
+              />
+            </div>
+            <div class="uk-card-body uk-hover">
+              <h3 class="uk-card-title">Media Top</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-default">
+            <div class="uk-card-body">
+              <h3 class="uk-card-title">Media Bottom</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt.
+              </p>
+            </div>
+            <div class="uk-card-media-bottom">
+              <img src="images/light.jpg" width="1800" height="1200" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer start -->
+    <footer>
+      <div class="uk-container uk-text-center uk-padding-small">
+        <h1>Copyright © 2023. All Rights Reserved.</h1>
+      </div>
+    </footer>
+    <!-- Footer end -->
+  </body>
+</html>
