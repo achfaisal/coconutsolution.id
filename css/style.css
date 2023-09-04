@@ -187,6 +187,14 @@ footer h1 {
 .product-slide {
   scale: 100%;
 }
+.product-container {
+  display: flex;
+  gap: 60px;
+}
+
+.picture-center {
+  text-align: center;
+}
 
 /* Media Query */
 
@@ -222,19 +230,43 @@ footer h1 {
   }
 }
 
-.product-container {
-  display: flex;
-  gap: 60px;
-}
-
-.picture-center {
-  text-align: center;
-}
-
 @media (max-width: 768px) {
   .product-container {
     display: flex;
     flex-direction: column-reverse;
     gap: 30px;
   }
+}
+
+/* TEST */
+
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-image img {
+  /* max-width: 70%;
+  max-height: 70%; */
+  transition: transform 0.3s ease;
+}
+
+.small-images {
+  display: flex;
+  gap: 10px;
+}
+
+.small-image {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.small-image:hover {
+  border: 2px solid #007bff;
+}
+
+.remove-border {
+  border: 0;
 }

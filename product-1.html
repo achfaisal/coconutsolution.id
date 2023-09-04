@@ -27,10 +27,12 @@
                 <a href="index.html" id="ganti-font">Home</a>
               </li>
               <li class="uk-visible@s">
-                <a href="#tentang-kami" data-uk-scroll="offset: 80">ABOUT US</a>
+                <a href="index.html#tentang-kami" data-uk-scroll="offset: 80"
+                  >ABOUT US</a
+                >
               </li>
               <li class="uk-visible@s">
-                <a href="#produk-kami" data-uk-scroll="offset: 80"
+                <a href="index.html#produk-kami" data-uk-scroll="offset: 80"
                   >PRODUCT<span uk-icon="icon: chevron-down"></span
                 ></a>
                 <div uk-dropdown="offset:7">
@@ -43,7 +45,7 @@
                 </div>
               </li>
               <li class="uk-visible@s">
-                <a href="#kontak-kami" data-uk-scroll="offset: 80"
+                <a href="index.html#kontak-kami" data-uk-scroll="offset: 80"
                   >CONTACT US</a
                 >
               </li>
@@ -70,12 +72,63 @@
             eiusmod tempor incididunt ut labore et dolore magna.
           </p>
         </div>
-        <div class="picture-center">
+
+        <!-- <div class="picture-center">
           <img src="img/cocopeat.png" alt="Image" />
+        </div> -->
+
+        <div>
+          <div class="image-gallery">
+            <div>
+              <img
+                class="big-image custom-card"
+                id="bigImage"
+                src="img/cocopeat.png"
+                alt="Big Image"
+              />
+            </div>
+            <div class="small-images">
+              <img
+                class="small-image custom-card"
+                src="img/cocopeat.png"
+                alt="Small Image 1"
+              />
+              <img
+                class="small-image custom-card"
+                src="img/sekam-bakar.png"
+                alt="Small Image 2"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>
 
+    <!-- Off canvas start -->
+    <div id="offcanvas-usage" uk-offcanvas="flip: true">
+      <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+          <li class="uk-active"><a href="#">Active</a></li>
+          <li>
+            <a href="#tentang-kami" data-uk-scroll="offset: 110">About Us</a>
+          </li>
+          <li class="uk-parent">
+            <a href="#produk-kami" data-uk-scroll="offset: 80">Product</a>
+            <ul class="uk-nav-sub">
+              <li><a href="#">Sub item</a></li>
+              <li><a href="#">Sub item</a></li>
+              <li><a href="#">Sub item</a></li>
+              <li><a href="#">Sub item</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#kontak-kami" uk-scroll>Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Off canvas end -->
     <!-- Footer start -->
     <footer>
       <div class="uk-container uk-text-center uk-padding-small">
