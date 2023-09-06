@@ -1,11 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const bigImage = document.getElementById("bigImage");
-  const smallImages = document.querySelectorAll(".small-image");
-
-  smallImages.forEach((smallImage) => {
-    smallImage.addEventListener("click", () => {
-      const newSrc = smallImage.getAttribute("src");
-      bigImage.src = newSrc;
-    });
+$(document).ready(function () {
+  // Check if the user has scrolled
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      // Add the 'transparent' class when scrolled down
+      $(".custom-navbar").addClass("transparent");
+    } else {
+      // Remove the 'transparent' class when scrolled to the top
+      $(".custom-navbar").removeClass("transparent");
+    }
   });
 });
