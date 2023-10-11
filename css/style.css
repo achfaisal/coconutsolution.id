@@ -67,6 +67,19 @@ body {
   padding-top: 80px; /* Adjust this value based on your navbar height */
 }
 
+/* Navbar Transparent */
+.custom-navbar {
+  transition: background-color 0.3s ease-in-out !important;
+}
+
+.custom-navbar.transparent {
+  background-color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.navbar-font {
+  color: rgb(105, 105, 105) !important;
+}
+
 .custom-nav > li > a {
   font-family: "Quicksand";
   font-size: 1rem;
@@ -117,6 +130,10 @@ a:hover {
 .custom-card {
   border-radius: 10px;
   overflow: hidden;
+}
+
+.uk-card-height {
+  height: 500px;
 }
 
 .uk-card.modified {
@@ -283,17 +300,4 @@ footer h1 {
 
 .tester {
   background-color: #007bff;
-}
-
-/* Test */
-.custom-navbar {
-  transition: background-color 0.3s ease-in-out !important;
-}
-
-.custom-navbar.transparent {
-  background-color: rgba(255, 255, 255, 0.85) !important;
-}
-
-.navbar-font {
-  color: rgb(105, 105, 105) !important;
 }
