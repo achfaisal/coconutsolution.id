@@ -59,8 +59,9 @@ html {
 /* Reset CSS end */
 
 .logo-main {
-  width: 100px;
+  width: 75px;
   height: auto;
+  padding: 5px;
 }
 
 body {
@@ -70,10 +71,11 @@ body {
 /* Navbar Transparent */
 .custom-navbar {
   transition: background-color 0.3s ease-in-out !important;
+  transition: all 0.3s; /* Add a smooth transition effect */
 }
 
 .custom-navbar.transparent {
-  background-color: rgba(255, 255, 255, 0.85) !important;
+  background-color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .navbar-font {
@@ -161,17 +163,10 @@ a:hover {
   height: auto; /* Maintain aspect ratio */
 }
 /* Footer */
-footer {
-  background-color: black;
-}
 
 footer h1 {
-  color: white;
+  color: black;
   font-family: "Quicksand";
-}
-
-.contact {
-  background-color: aquamarine;
 }
 
 .custom-flex-container {
@@ -300,4 +295,136 @@ footer h1 {
 
 .tester {
   background-color: #007bff;
+}
+
+.small-navbar {
+  height: 60px;
+}
+
+.small-navbar .navbar-font {
+  font-size: 0.8em; /* Use a relative font size (em or rem) */
+}
+
+.small-navbar .custom-card .uk-nav a {
+  font-size: 1em; /* Use a relative font size for dropdown links */
+}
+
+.small-navbar .navbar-font,
+.small-navbar .custom-card .uk-nav a {
+  padding-bottom: 1rem;
+}
+
+.small-navbar .logo-main {
+  width: 60px;
+  height: auto;
+}
+
+.product-breadcrumb {
+  padding: 2rem 0px 2rem;
+  margin-top: 2rem;
+}
+
+.product-title {
+  font-size: xx-large;
+}
+
+.table-product {
+  margin-top: 35px;
+  border-radius: 20px;
+  max-width: 500px;
+  font-weight: 400;
+}
+
+.product-img {
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+#kontak-kami {
+  background-color: rgb(66, 35, 35);
+  color: white;
+}
+
+.product-desc {
+  margin-top: 23px;
+  padding-bottom: 20px;
+}
+
+.logo-scroll {
+  padding-bottom: 20px;
+}
+
+.border-map {
+  border-radius: 20px !important;
+}
+
+.footer-title {
+  color: white;
+  font-weight: 500;
+}
+
+/* TEST WIDGET */
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.main-button {
+  background-color: #25d366; /* Green color, you can customize this */
+  color: #fff;
+  border-radius: 10px;
+  width: auto;
+  height: 40px;
+  text-align: center;
+  padding: 20px;
+  line-height: 0;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.main-button:hover {
+  background-color: #198d44;
+}
+
+.options {
+  display: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.options a {
+  background-color: #25d366; /* Green color, you can customize this */
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.options a:hover {
+  background-color: #128c7e; /* Darker green color for hover state */
+}
+
+.close-button {
+  background-color: #128c7e;
+  color: white;
+  margin-bottom: 10px;
+  width: 20px;
+  text-align: center;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger-scroll {
+  margin-top: -20px !important;
+}
+
+.image-product {
+  height: 250px;
+  width: 500px;
 }

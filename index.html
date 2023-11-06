@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Indokelapa Nusantara</title>
+    <title>Coconut Solution.id</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/uikit.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="/js/uikit.min.js"></script>
     <script src="/js/uikit-icons.min.js"></script>
-    <script src="/js/script.js"></script>
   </head>
   <body>
     <!-- Navbar start -->
@@ -17,8 +16,8 @@
       <div class="uk-container">
         <div uk-navbar>
           <div class="uk-flex-middle uk-navbar-left">
-            <a href="#"
-              ><img class="logo-main" src="img/logo-big.png" alt=""
+            <a href="index.html"
+              ><img class="logo-main" src="img/coco-solu.png" alt=""
             /></a>
           </div>
           <!-- Right navbar start -->
@@ -44,9 +43,13 @@
                   data-uk-scroll="offset: 80"
                   >PRODUCT<span uk-icon="icon: chevron-down"></span
                 ></a>
-                <div class="custom-card" uk-dropdown="offset:7">
+                <div
+                  id="dropdown"
+                  class="custom-card custom-dropdown"
+                  uk-dropdown="offset:0"
+                >
                   <ul class="uk-nav uk-navbar-dropdown-nav">
-                    <li><a href="#">Produk 1</a></li>
+                    <li><a href="cocofiber.html">Coco Fiber</a></li>
                     <li><a href="#">Item</a></li>
                     <li><a href="#">Item</a></li>
                     <li><a href="#">Item</a></li>
@@ -61,6 +64,15 @@
                   >CONTACT US</a
                 >
               </li>
+              <li class="uk-visible@s">
+                <a
+                  class="navbar-font"
+                  href="new-page.html"
+                  data-uk-scroll="offset: 80"
+                  >GALLERY</a
+                >
+              </li>
+
               <!-- Hamburger menu start (mobile) -->
               <li class="uk-hidden@s">
                 <a href="#offcanvas-usage" uk-toggle uk-icon="icon: menu"></a>
@@ -85,15 +97,15 @@
         <ul class="uk-slideshow-items">
           <li>
             <img src="img/kelapa-1.jpg" alt="" uk-cover />
-            <!-- <div class="uk-position-center uk-overlay">
-              <h3 class="uk-heading-small">Text on Picture 1</h3>
-            </div> -->
+            <div class="uk-position-center uk-overlay">
+              <!-- <h3 class="uk-heading-small">Text on Picture 1</h3> -->
+            </div>
           </li>
           <li>
             <img src="img/kelapa-2.png" alt="" uk-cover />
-            <!-- <div class="uk-position-center uk-overlay">
-              <h3 class="uk-heading-small">Text on Picture 2</h3>
-            </div> -->
+            <div class="uk-position-center uk-overlay">
+              <!-- <h3 class="uk-heading-small">Text on Picture 2</h3> -->
+            </div>
           </li>
         </ul>
 
@@ -118,11 +130,32 @@
     </div>
     <!-- Image Hero End -->
 
+    <!-- <section class="uk-container">
+      <div class="uk-child-width-expand@s" uk-grid>
+        <div>
+          <div>
+            <h1>Judul</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error
+              perferendis officiis eius maiores iusto aliquid expedita delectus
+              illo, impedit possimus odio rem ipsum obcaecati, modi debitis at
+              vitae, explicabo eligendi.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="img/1.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section> -->
+
     <!-- Tentang Kami -->
     <section id="tentang-kami" class="uk-container center-content">
       <div>
         <h1 class="title">TENTANG KAMI</h1>
-        <p class="uk-padding-small">
+        <p class="uk-padding-small uk-text-bold">
           Indo Kelapa Nusantara merupakan perusahaan yang berdiri pada tahun
           2023 yang bertujuan untuk membantu menyelesaikan permasalahan kelapa
           di indonesia khususnya di Bali, dimana kami fokus dalam pengembangan
@@ -195,35 +228,16 @@
           <p>Berikut ini adalah produk-produk berkualitas dari kami.</p>
         </div>
         <div class="uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid>
-          <a href="product-1.html">
+          <a href="cocofiber.html">
             <div>
               <div
-                class="uk-card-height uk-card uk-card-hover uk-card-default custom-card modified"
+                class="uk-card-height uk-card uk-card-hover uk-card-default custom-card modified overflow-text"
               >
                 <div class="uk-card-media-top">
-                  <img src="img/1.png" alt="" />
+                  <img src="img/test.png" class="image-product" alt="" />
                 </div>
                 <div class="uk-card-body">
-                  <h3 class="uk-card-title title-margin">Coconut Oil</h3>
-                  <p class="product-text">
-                    Minyak kelapa kami merupakan minyak pilihan yang diekstraksi
-                    dari kelapa segar berkualitas tinggi, sehingga menjaga
-                    keaslian dan manfaat alaminya.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="">
-            <div>
-              <div
-                class="uk-card-height uk-card uk-card-hover uk-card-default custom-card modified"
-              >
-                <div class="uk-card-media-top">
-                  <img src="img/2.png" width="600" height="400" alt="" />
-                </div>
-                <div class="uk-card-body">
-                  <h3 class="uk-card-title title-margin">Coconut Husk</h3>
+                  <h3 class="uk-card-title title-margin">Coir Net</h3>
                   <p class="product-text">
                     Coconut husk kami dipilih dengan teliti dan diproses secara
                     cermat untuk menghasilkan serbuk serat kelapa berkualitas
@@ -233,48 +247,11 @@
               </div>
             </div>
           </a>
-          <a href="">
+
+          <!-- <a href="">
             <div>
               <div
-                class="uk-card-height uk-card uk-card-hover uk-card-default custom-card modified"
-              >
-                <div class="uk-card-media-top">
-                  <img src="img/cocopeat.png" alt="" />
-                </div>
-                <div class="uk-card-body">
-                  <h3 class="uk-card-title title-margin">Cocopeat</h3>
-                  <p class="product-text">
-                    Cocopeat kami adalah produk berkualitas tinggi yang
-                    dihasilkan dari serbuk serat kelapa, yang telah diolah
-                    dengan cermat.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="">
-            <div>
-              <div
-                class="uk-card-height uk-card uk-card-hover uk-card-default custom-card modified"
-              >
-                <div class="uk-card-media-top">
-                  <img src="img/sekam-bakar.png" alt="" />
-                </div>
-                <div class="uk-card-body">
-                  <h3 class="uk-card-title title-margin">Sekam Bakar</h3>
-                  <p class="product-text">
-                    Sekam bakar kami adalah pilihan terbaik untuk keperluan
-                    pemanasan dan energi ramah lingkungan. Dibuat dan diproses
-                    dengan teknologi canggih.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="">
-            <div>
-              <div
-                class="uk-card-height uk-card uk-card-hover uk-card-default custom-card modified"
+                class="uk-card-height uk-card uk-card-hover uk-card-default custom-card modified overflow-text"
               >
                 <div class="uk-card-media-top">
                   <img src="img/Cocobristle.png" alt="" />
@@ -289,48 +266,29 @@
                 </div>
               </div>
             </div>
-          </a>
-          <a href="">
-            <div>
-              <div
-                class="uk-card-height uk-card uk-card-hover uk-card-default custom-card modified"
-              >
-                <div class="uk-card-media-top">
-                  <img src="img/3.png" width="600" height="400" alt="" />
-                </div>
-                <div class="uk-card-body">
-                  <h3 class="uk-card-title title-margin">Perlite</h3>
-                  <p class="product-text">
-                    Perlite kami adalah pilihan ideal untuk media tanam
-                    hidroponik Anda. Terbuat dari biji vulkanik yang meledak,
-                    perlite kami memiliki karakteristik unik untuk hidroponik.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </a>
+          </a> -->
         </div>
       </div>
     </section>
 
     <section id="kontak-kami" class="section-3">
-      <div class>
+      <!-- <div class>
         <h1 class="title uk-text-center uk-margin-medium-bottom">
           KONTAK KAMI
         </h1>
-      </div>
+      </div> -->
 
       <!-- Divider -->
       <div class="uk-container">
         <div class="custom-flex-container">
           <div class="container-alamat">
-            <h3 class="uk-margin-small-bottom">Alamat</h3>
+            <h3 class="uk-margin-small-bottom footer-title">Alamat</h3>
             <p>Jl. Gg. Sari Indah, Nangka Utara</p>
             <p>Tonja,</p>
             <p>Denpasar Utara, Bali</p>
           </div>
           <div class="container-find-us">
-            <h3 class="uk-margin-small-bottom">Find us on</h3>
+            <h3 class="uk-margin-small-bottom footer-title">Find us on</h3>
             <div class="svg-container">
               <div>
                 <span class="icon-wa" uk-icon="icon: instagram"></span>
@@ -351,7 +309,7 @@
             </div>
           </div>
           <div class="uk-margin-medium-bottom">
-            <h3 class="uk-margin-small-bottom">Map</h3>
+            <h3 class="uk-margin-small-bottom footer-title">Map</h3>
             <div class="mapouter">
               <div class="gmap_canvas">
                 <iframe
@@ -390,7 +348,7 @@
     <!-- Footer start -->
     <footer>
       <div class="uk-container uk-text-center uk-padding-small">
-        <h1>Copyright © 2023. All Rights Reserved.</h1>
+        <h1>Copyright © 2023 Coconut Solution. All Rights Reserved.</h1>
       </div>
     </footer>
     <!-- Footer end -->
@@ -441,7 +399,29 @@
         </ul>
       </div>
     </div>
+    <!-- Chat Widget Container -->
+    <div class="chat-widget" id="chat-widget">
+      <div class="main-button">Contact Us</div>
+      <div class="close-button">X</div>
+      <div class="options">
+        <a
+          href="https://www.instagram.com/example"
+          target="_blank"
+          rel="noopener"
+          >Instagram</a
+        >
+        <a
+          href="https://api.whatsapp.com/send?phone=123456789"
+          target="_blank"
+          rel="noopener"
+          >WhatsApp</a
+        >
+        <!-- Add more contact options as needed -->
+      </div>
+    </div>
+    <!-- Chat Widget -->
     <!-- Off canvas end -->
     <!-- Outside layout end -->
+    <script src="/js/script.js"></script>
   </body>
 </html>
