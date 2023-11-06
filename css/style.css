@@ -190,6 +190,13 @@ footer h1 {
   margin-right: 10px; /* Adjust this margin as needed */
 }
 
+footer {
+  background-color: #1c5db8;
+}
+footer h1 {
+  color: white;
+}
+
 /* Product Page */
 .product {
   margin-top: 40px; /* You can adjust this margin as needed */
@@ -229,17 +236,10 @@ footer h1 {
   }
 }
 
-@media (max-width: 767px) {
-  .container-alamat,
-  .container-find-us {
-    margin-bottom: 1.5rem;
-  }
-}
-
-@media (width: 768px) {
-  .container-find-us {
-    margin-right: 1.5rem;
-  }
+.container-alamat,
+.container-find-us {
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 @media (max-width: 960px) {
@@ -248,53 +248,6 @@ footer h1 {
     flex-direction: column-reverse;
     gap: 30px;
   }
-}
-
-/* TEST */
-
-.image-gallery {
-  display: flex;
-  flex-direction: column;
-}
-
-.image-gallery-small {
-  align-items: center;
-}
-
-.big-image img {
-  transition: transform 0.3s ease;
-}
-
-.image-size {
-  width: 200px;
-}
-
-.small-images {
-  display: flex;
-  gap: 10px;
-}
-
-.small-image {
-  width: 60px;
-  height: 60px;
-  cursor: pointer;
-}
-
-.small-image:hover {
-  border: 2px solid #007bff;
-}
-
-.remove-border {
-  border: 0;
-}
-
-.accordion {
-  border: solid 0.5px black;
-  border-radius: 10px;
-}
-
-.tester {
-  background-color: #007bff;
 }
 
 .small-navbar {
@@ -341,7 +294,7 @@ footer h1 {
 }
 
 #kontak-kami {
-  background-color: rgb(66, 35, 35);
+  background-color: #1c5db8;
   color: white;
 }
 
@@ -355,7 +308,7 @@ footer h1 {
 }
 
 .border-map {
-  border-radius: 20px !important;
+  border-radius: 20px;
 }
 
 .footer-title {
@@ -426,5 +379,65 @@ footer h1 {
 
 .image-product {
   height: 250px;
-  width: 500px;
+  width: 600px;
 }
+
+/* OLD */
+
+/* .image-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-gallery-small {
+  align-items: center;
+}
+
+.big-image img {
+  transition: transform 0.3s ease;
+}
+
+.image-size {
+  width: 200px;
+} */
+
+/* .small-images {
+  display: flex;
+  gap: 10px;
+}
+
+.small-image {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.small-image:hover {
+  border: 2px solid #007bff;
+} */
+
+/* .remove-border {
+  border: 0;
+} */
+
+/* .accordion {
+  border: solid 0.5px black;
+  border-radius: 10px;
+} */
+
+/* .tester {
+  background-color: #007bff;
+} */
+
+/* @media (max-width: 767px) {
+  .container-alamat,
+  .container-find-us {
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+  }
+} */
+
+/* @media (width: 768px) {
+  .container-find-us {
+  }
+} */

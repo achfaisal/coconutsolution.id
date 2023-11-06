@@ -75,7 +75,12 @@
 
               <!-- Hamburger menu start (mobile) -->
               <li class="uk-hidden@s">
-                <a href="#offcanvas-usage" uk-toggle uk-icon="icon: menu"></a>
+                <a
+                  href="#offcanvas-usage"
+                  uk-toggle
+                  uk-icon="icon: menu"
+                  id="hamburger-bar"
+                ></a>
               </li>
               <!-- Hamburger menu end (mobile) -->
             </ul>
@@ -88,7 +93,7 @@
 
     <!-- Image Hero start -->
     <div
-      uk-slideshow="animation: push; min-height: 300; max-height: 600; autoplay: true; autoplay-interval: 3000"
+      uk-slideshow="animation: push; min-height: 300; max-height: 400; autoplay: true; autoplay-interval: 3000"
     >
       <div
         class="uk-position-relative uk-visible-toggle uk-light"
@@ -163,17 +168,31 @@
         </p>
       </div>
 
+      <div>
+        <video
+          src="https://yootheme.com/site/images/media/yootheme-pro.mp4"
+          width="1800"
+          height="1200"
+          loop
+          muted
+          playsinline
+          uk-video="autoplay: inview"
+          class="border-map"
+        ></video>
+      </div>
+
       <!-- Divider -->
       <div class="uk-child-width-1-3@s uk-grid-small uk-grid-match" uk-grid>
         <div>
           <div class="uk-card uk-card-hover uk-card-body custom-card">
-            <img
-              class="uk-border-circle"
-              src="img/round-1.png"
-              alt=""
-              width="150px"
-              height="150px"
-            />
+            <img class="uk-border-circle" src="img/round-1.png" alt="" />
+            <h3 class="uk-card-title title-margin">Enviromental Friendly</h3>
+            <p>Read More</p>
+          </div>
+        </div>
+        <div>
+          <div class="uk-card uk-card-hover uk-card-body custom-card">
+            <img class="uk-border-circle" src="img/round-1.png" alt="" />
             <h3 class="uk-card-title title-margin">Enviromental Friendly</h3>
             <p>
               Perusahaan kami menerapkan prinsip-prinsip 'environmental
@@ -183,30 +202,18 @@
         </div>
         <div>
           <div class="uk-card uk-card-hover uk-card-body custom-card">
-            <img
-              class="uk-border-circle"
-              src="img/round-2.png"
-              alt=""
-              width="150px"
-              height="150px"
-            />
-            <h3 class="uk-card-title title-margin">Efficent Processing</h3>
+            <img class="uk-border-circle" src="img/round-1.png" alt="" />
+            <h3 class="uk-card-title title-margin">Enviromental Friendly</h3>
             <p>
-              Perusahaan kami menekankan pemrosesan yang efisien untuk
-              meningkatkan produktivitas dan kualitas layanan
+              Perusahaan kami menerapkan prinsip-prinsip 'environmental
+              friendly' dalam seluruh aspek operasionalnya.
             </p>
           </div>
         </div>
-        <div>
+        <!-- <div>
           <a href="#modal-example" uk-toggle>
             <div class="uk-card uk-card-hover uk-card-body custom-card">
-              <img
-                class="uk-border-circle"
-                src="img/round-3.png"
-                alt=""
-                width="150px"
-                height="150px"
-              />
+              <img class="uk-border-circle" src="img/round-3.png" alt="" />
               <h3 class="uk-card-title title-margin">
                 Worldwide Certification
               </h3>
@@ -216,7 +223,31 @@
               </p>
             </div></a
           >
-        </div>
+        </div> -->
+
+        <!-- Modal start -->
+        <!-- <div id="modal-example" uk-modal>
+          <div
+            class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical custom-card"
+          >
+            <button
+              class="uk-modal-close-default"
+              type="button"
+              uk-close
+            ></button>
+            <h2 class="uk-modal-title uk-margin-medium-bottom">Headline</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborums.
+            </p>
+          </div>
+        </div> -->
+        <!-- Modal end -->
       </div>
     </section>
 
@@ -272,19 +303,19 @@
     </section>
 
     <section id="kontak-kami" class="section-3">
-      <!-- <div class>
-        <h1 class="title uk-text-center uk-margin-medium-bottom">
-          KONTAK KAMI
-        </h1>
-      </div> -->
-
       <!-- Divider -->
       <div class="uk-container">
         <div class="custom-flex-container">
           <div class="container-alamat">
+            <img
+              class="footer-img"
+              src="img/transparent-coco.png"
+              alt=""
+              height="100px"
+              width="100px"
+            />
             <h3 class="uk-margin-small-bottom footer-title">Alamat</h3>
-            <p>Jl. Gg. Sari Indah, Nangka Utara</p>
-            <p>Tonja,</p>
+            <p>Jl. Gg. Sari Indah, Nangka Utara, Tonja</p>
             <p>Denpasar Utara, Bali</p>
           </div>
           <div class="container-find-us">
@@ -293,7 +324,7 @@
               <div>
                 <span class="icon-wa" uk-icon="icon: instagram"></span>
               </div>
-              <div>indokelapanusantara</div>
+              <div>coconutsolution.id</div>
             </div>
             <div class="svg-container">
               <div>
@@ -311,7 +342,7 @@
           <div class="uk-margin-medium-bottom">
             <h3 class="uk-margin-small-bottom footer-title">Map</h3>
             <div class="mapouter">
-              <div class="gmap_canvas">
+              <div class="gmap_canvas border-map">
                 <iframe
                   width="100%"
                   height="100%"
@@ -355,32 +386,12 @@
 
     <!-- Outside layout start -->
 
-    <!-- Modal start -->
-    <div id="modal-example" uk-modal>
-      <div
-        class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical custom-card"
-      >
-        <button class="uk-modal-close-default" type="button" uk-close></button>
-        <h2 class="uk-modal-title uk-margin-medium-bottom">Headline</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborums.
-        </p>
-      </div>
-    </div>
-    <!-- Modal end -->
-
     <!-- Off canvas start -->
     <div id="offcanvas-usage" uk-offcanvas="flip: true">
       <div class="uk-offcanvas-bar">
         <button class="uk-offcanvas-close" type="button" uk-close></button>
         <ul class="uk-nav uk-nav-default">
-          <li class="uk-active"><a href="#">Active</a></li>
+          <li class="uk-active"><a href="#">Home</a></li>
           <li>
             <a href="#tentang-kami" data-uk-scroll="offset: 110">About Us</a>
           </li>
