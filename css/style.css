@@ -79,7 +79,8 @@ body {
 }
 
 .navbar-font {
-  color: rgb(105, 105, 105) !important;
+  font-weight: 500 !important;
+  color: black;
 }
 
 .custom-nav > li > a {
@@ -314,6 +315,10 @@ footer h1 {
 .footer-title {
   color: white;
   font-weight: 500;
+}
+
+.footer-img {
+  margin-bottom: 10px;
 }
 
 /* TEST WIDGET */
