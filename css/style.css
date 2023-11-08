@@ -68,6 +68,10 @@ body {
   padding-top: 80px; /* Adjust this value based on your navbar height */
 }
 
+.navbar-padding {
+  padding-bottom: 1rem;
+}
+
 /* Navbar Transparent */
 .custom-navbar {
   transition: background-color 0.3s ease-in-out !important;
@@ -255,16 +259,18 @@ footer h1 {
   height: 60px;
 }
 
+/* Navbar font goes smaller when scrolled */
 .small-navbar .navbar-font {
-  font-size: 0.8em; /* Use a relative font size (em or rem) */
+  font-size: 0.8em;
 }
 
+/* Product list goes smaller font when scrolled */
 .small-navbar .custom-card .uk-nav a {
-  font-size: 1em; /* Use a relative font size for dropdown links */
+  font-size: 0.9em;
 }
 
 .small-navbar .navbar-font,
-.small-navbar .custom-card .uk-nav a {
+.small-navbar {
   padding-bottom: 1rem;
 }
 
@@ -289,9 +295,23 @@ footer h1 {
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .table-product {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 640px) {
+  .table-product {
+    margin-top: -30px;
+  }
+}
+
 .product-img {
-  margin-top: 30px;
+  margin: 30px 0 10px 0;
   border-radius: 20px;
+  width: 540px;
+  height: auto;
 }
 
 #kontak-kami {
@@ -301,7 +321,6 @@ footer h1 {
 
 .product-desc {
   margin-top: 23px;
-  padding-bottom: 20px;
 }
 
 .logo-scroll {
@@ -385,6 +404,29 @@ footer h1 {
 .image-product {
   height: 250px;
   width: 600px;
+}
+
+.gallery-container {
+  display: flex;
+  margin: 20px 0 30px 0;
+}
+
+hr {
+  border: 1px solid #afafaf36 !important; /* Customize the line color and style */
+  margin: 0px 0 25px 0; /* Add spacing above and below the line */
+}
+
+.gallery-images {
+  padding: 10px 10px 0 0;
+}
+
+.gallery-border {
+  border-radius: 10px;
+  transition: filter 0.3s;
+}
+
+.gallery-border:hover {
+  filter: brightness(0.7); /* Decrease brightness to darken the image */
 }
 
 /* OLD */
