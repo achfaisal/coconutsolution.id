@@ -140,7 +140,7 @@ a:hover {
 }
 
 .uk-card-height {
-  height: 500px;
+  height: 450px;
 }
 
 .uk-card.modified {
@@ -404,6 +404,7 @@ footer h1 {
 .image-product {
   height: 250px;
   width: 600px;
+  object-fit: cover;
 }
 
 .gallery-container {
@@ -430,4 +431,12 @@ hr {
 
 .gallery-border:hover {
   filter: brightness(0.7); /* Decrease brightness to darken the image */
+}
+
+.list-table {
+  list-style-type: circle;
+}
+
+.margin-li {
+  margin-top: 20px;
 }
